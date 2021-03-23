@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: default
+  name: job-executer
+  labels:
+    k8s-app: compilejobs
+rules:
+  - apiGroups: ["batch"] # "" indicates the core API group
+    resources: ["jobs"]
+    verbs:
+      ["create", "list", "watch", "delete", "patch", "update", "apply", "get"]
