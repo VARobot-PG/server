@@ -33,6 +33,6 @@ or
  -	kubectl get service
 or
  -	kubectl get ingress
-9.	It should tell you something like (here for example the deployment [option b)])
-NAME                                         READY   STATUS    RESTARTS   AGE
+9.	It should tell you something like (here for example the deployment [option b)])  
+NAME                                         READY   STATUS    RESTARTS   AGE  
 compileserver-deployment-588cc459b8-mw6tr    1/1     Running   6          14d
