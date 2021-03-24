@@ -1,4 +1,5 @@
 # servers for SPEARED V2 (Simulation and Compilation)
+This work is particially taken from the SPEARED approach. Consider for reference https://github.com/VARobot-PG/application/tree/original_work.
 ## PhysicsEngine (gazebo) setup
 1. clone repository 
 2. cd PhysicsEngine
