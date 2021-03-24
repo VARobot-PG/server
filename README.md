@@ -19,20 +19,20 @@ buster   Ready    control-plane,master   14d   v1.20.0+k3s2
 export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
 6.	Now you are ready to configure your cluster. To use the compilation server you need a suitable service account that allows the compilerserver central pod to start (compilation-)jobs
 7.	Therefore run
-8.	kubectl apply -f job-controller-role.yml
-9.	kubectl apply -f job-contoller-svc-acc.yml
-10.	kubectl apply -f job-role-binding.yml
-11.	kubectl apply -f compileserver-deployment.yml
-12.	kubectl apply -f compileserver-service.yml
-kubectl apply -f compileserver-ingress.yml
-13.	Now you can check the status of the cluster by running
-1.	kubectl get pods
+- kubectl apply -f job-controller-role.yml
+- kubectl apply -f job-contoller-svc-acc.yml
+- kubectl apply -f job-role-binding.yml
+- kubectl apply -f compileserver-deployment.yml
+- kubectl apply -f compileserver-service.yml
+- kubectl apply -f compileserver-ingress.yml
+8.	Now you can check the status of the cluster by running
+ -	kubectl get pods
 or
-2.	kubectl get deployment
+ -	kubectl get deployment
 or
-3.	kubectl get service
+ -	kubectl get service
 or
-4.	kubectl get ingress
-14.	It should tell you something like (here for example the deployment [option b)])
-15.	NAME                                         READY   STATUS    RESTARTS   AGE
+ -	kubectl get ingress
+9.	It should tell you something like (here for example the deployment [option b)])
+NAME                                         READY   STATUS    RESTARTS   AGE
 compileserver-deployment-588cc459b8-mw6tr    1/1     Running   6          14d
